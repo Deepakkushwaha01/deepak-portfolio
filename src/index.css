@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --color-dark: #000000;
+  --color-darker: #050505;
+  --color-card: rgba(255, 255, 255, 0.03);
+  --color-card-hover: rgba(255, 255, 255, 0.05);
+  --color-primary: #ffffff;
+  --color-primary-foreground: #000000;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-gray-300 font-sans antialiased overflow-x-hidden selection:bg-primary/30 selection:text-white;
+  }
+}
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  .radial-mask {
+    mask-image: radial-gradient(circle at center, black 40%, transparent 80%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
