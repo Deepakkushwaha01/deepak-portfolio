@@ -1,13 +1,15 @@
 import { Code2, Briefcase, GraduationCap, Mail, Phone } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import portfolioImg from '../assets/portfolioImage.jpg';
+import resumePdf from '../assets/resume.pdf';
 
 export const personalInfo = {
   name: "Deepak Kushwaha",
   role: "Software Engineer",
   tagline: "Delivering enterprise and product-grade applications.",
   about: "Software Engineer with 3+ years of experience building enterprise-grade applications. Proficient in C#, .NET Core, React, and Azure. Specialized in backend development, secure REST APIs, and cloud-native services. Proven track record of designing scalable, high-performance systems using Entity Framework, Redis, and RabbitMQ.",
-  avatarUrl: "/portfolioImage.jpg", // Replace with actual image URL or local path like '/profile.jpg'
-  resumeUrl: "/resume.pdf", // Add link to your resume PDF
+  avatarUrl: portfolioImg,
+  resumeUrl: resumePdf,
 };
 
 export const socialLinks = [
